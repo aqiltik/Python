@@ -1,0 +1,15 @@
+# Meminta input bilangan
+bilangan = int(input("Masukkan bilangan: "))
+
+# Menentukan apakah bilangan prima
+prima = True
+for i in range(2, bilangan):
+    if bilangan % i == 0:
+        prima = False
+        break
+
+# Mencetak hasil penentuan
+if prima:
+    print(bilangan, "adalah bilangan prima")
+else:
+    print(bilangan, "bukan bilangan prima")
