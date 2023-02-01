@@ -1,0 +1,10 @@
+# Aplikasi Konversi Suhu
+
+# Meminta input suhu dalam Celsius
+celsius = float(input("Masukkan suhu dalam derajat Celsius: "))
+
+# Menghitung suhu dalam Fahrenheit
+fahrenheit = (celsius * 1.8) + 32
+
+# Mencetak hasil konversi suhu
+print("Suhu", celsius, "derajat Celsius setara dengan", fahrenheit, "derajat Fahrenheit")
