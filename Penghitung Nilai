@@ -1,0 +1,14 @@
+# Meminta input jumlah mata kuliah
+jumlah_mata_kuliah = int(input("Masukkan jumlah mata kuliah: "))
+
+# Meminta input nilai mata kuliah
+total_nilai = 0
+for i in range(jumlah_mata_kuliah):
+    nilai = float(input("Masukkan nilai mata kuliah ke-" + str(i + 1) + ": "))
+    total_nilai += nilai
+
+# Menghitung rata-rata nilai
+rata_rata = total_nilai / jumlah_mata_kuliah
+
+# Mencetak hasil perhitungan
+print("Rata-rata nilai akhir:", rata_rata)
