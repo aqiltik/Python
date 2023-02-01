@@ -1,0 +1,10 @@
+# Aplikasi Konversi Suhu
+
+# Mendefinisikan suhu dalam Celsius
+celsius = 37.5
+
+# Menghitung suhu dalam Fahrenheit
+fahrenheit = (celsius * 1.8) + 32
+
+# Mencetak hasil konversi suhu
+print("Suhu", celsius, "derajat Celsius setara dengan", fahrenheit, "derajat Fahrenheit")
