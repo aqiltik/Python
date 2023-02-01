@@ -1,0 +1,17 @@
+# Aplikasi Penentu Kategori Usia
+
+# Meminta input usia
+usia = int(input("Masukkan usia: "))
+
+# Menentukan kategori usia
+if usia < 5:
+    kategori = "balita"
+elif usia >= 5 and usia < 18:
+    kategori = "anak-anak"
+elif usia >= 18 and usia < 60:
+    kategori = "dewasa"
+else:
+    kategori = "lansia"
+
+# Mencetak hasil penentuan
+print("Anda termasuk dalam kategori", kategori)
