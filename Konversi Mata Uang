@@ -1,0 +1,11 @@
+# Aplikasi Konversi Mata Uang
+
+# Meminta input jumlah uang dan kurs
+jumlah = float(input("Masukkan jumlah uang: "))
+kurs = float(input("Masukkan kurs: "))
+
+# Menghitung konversi mata uang
+hasil = jumlah * kurs
+
+# Mencetak hasil konversi
+print("Jumlah uang", jumlah, "setara dengan", hasil, "setelah dikonversikan dengan kurs", kurs)
