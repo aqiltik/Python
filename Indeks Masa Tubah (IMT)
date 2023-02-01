@@ -1,0 +1,11 @@
+# Aplikasi Penghitung Indeks Massa Tubuh (IMT)
+
+# Meminta input berat badan dan tinggi badan
+berat = float(input("Masukkan berat badan (kg): "))
+tinggi = float(input("Masukkan tinggi badan (m): "))
+
+# Menghitung IMT
+imt = berat / (tinggi ** 2)
+
+# Mencetak hasil perhitungan
+print("Indeks Massa Tubuh Anda adalah", imt)
