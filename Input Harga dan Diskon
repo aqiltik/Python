@@ -1,0 +1,10 @@
+# Meminta input harga dan persentase diskon
+harga = float(input("Masukkan harga: "))
+diskon = float(input("Masukkan persentase diskon: "))
+
+# Menghitung diskon
+diskon = harga * diskon / 100
+harga_setelah_diskon = harga - diskon
+
+# Mencetak hasil perhitungan
+print("Harga sebelum diskon adalah", harga, "dan harga setelah diskon adalah", harga_setelah_diskon)
