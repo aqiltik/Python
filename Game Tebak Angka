@@ -1,0 +1,18 @@
+import random
+
+angka_acak = random.randint(1, 100)
+tebakan = 0
+coba = 0
+
+print("Tebak angka antara 1 dan 100")
+while tebakan != angka_acak:
+    tebakan = int(input("Masukkan tebakan Anda: "))
+    coba += 1
+    if tebakan < angka_acak:
+        print("Tebakan terlalu rendah")
+    elif tebakan > angka_acak:
+        print("Tebakan terlalu tinggi")
+
+print("Tebakan benar! Angka yang dicari adalah", angka_acak)
+print("Anda menebak dalam", coba, "kali tebakan")
+    
