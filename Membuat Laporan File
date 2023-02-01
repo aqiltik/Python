@@ -1,0 +1,21 @@
+import os
+
+def get_dir_size(path):
+    total = 0
+    with os.scandir(path) as it:
+        for entry in it:
+            if entry.is_file():
+                total += entry.stat().st_size
+            elif entry.is_dir():
+                total += get_dir_size(entry.path)
+    return total
+
+path = input("Masukkan path folder: ")
+if os.path.exists(path):
+    for folder, sub_folders, files in os.walk(path):
+        print("Folder: ", folder)
+        for file in files:
+            print("File: ", file, "Ukuran: ", os.path.getsize(os.path.join(folder, file)), "bytes")
+        print("\n")
+else:
+    print("Folder tidak ditemukan")
