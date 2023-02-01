@@ -1,0 +1,8 @@
+# Meminta input jari-jari lingkaran
+jari = float(input("Masukkan jari-jari lingkaran: "))
+
+# Menghitung luas lingkaran
+luas = 3.14 * (jari ** 2)
+
+# Mencetak hasil perhitungan
+print("Luas lingkaran dengan jari-jari", jari, "adalah", luas)
