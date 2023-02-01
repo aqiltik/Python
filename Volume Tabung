@@ -1,0 +1,11 @@
+# Aplikasi Penghitung Volume Tabung
+
+# Meminta input jari-jari dan tinggi
+jari_jari = float(input("Masukkan jari-jari: "))
+tinggi = float(input("Masukkan tinggi: "))
+
+# Menghitung volume
+volume = 3.14 * (jari_jari ** 2) * tinggi
+
+# Mencetak hasil perhitungan
+print("Volume dari tabung dengan jari-jari", jari_jari, "dan tinggi", tinggi, "adalah", volume)
