@@ -1,0 +1,20 @@
+# Meminta input umur
+umur = int(input("Masukkan umur: "))
+
+# Menentukan kategori umur
+kategori = ""
+if umur < 2:
+    kategori = "Bayi"
+elif umur >= 2 and umur < 4:
+    kategori = "Balita"
+elif umur >= 4 and umur < 13:
+    kategori = "Anak-anak"
+elif umur >= 13 and umur < 20:
+    kategori = "Remaja"
+elif umur >= 20 and umur < 30:
+    kategori = "Pemuda"
+else:
+    kategori = "Dewasa"
+
+# Mencetak hasil penentuan
+print("Kategori umur:", kategori)
